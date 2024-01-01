@@ -3,7 +3,25 @@ import VueRouter from 'vue-router'
 import getToken from '@/utils/token.js'
 Vue.use(VueRouter)
 
-const routes = []
+const routes = [
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('@/views/login/index'),
+    meta: { auth: false, keepAlive: false }
+  },
+  {
+    path: '/404',
+    name: 'Defined',
+    component: () => import('@/views/404/index'),
+    meta: { auth: false, keepAlive: false }
+  },
+  {
+    path: '*',
+    redirect: '/404',
+    hidden: true
+  }
+]
 
 const router = new VueRouter({
   mode: 'history',
