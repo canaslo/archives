@@ -1,5 +1,11 @@
 <template>
-  <div>登录页</div>
+  <div class="login">
+    <el-container>
+      <el-main>
+        测试
+      </el-main>
+    </el-container>
+  </div>
 </template>
 <script>
 export default {
@@ -10,4 +16,8 @@ export default {
   methods: {}
 }
 </script>
-<style scoped lang='scss'></style>
+<style scoped lang='scss'>
+.login {
+  height: 100%;
+}
+</style>
