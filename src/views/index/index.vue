@@ -87,4 +87,10 @@ export default {
   }
 }
 </script>
-<style scoped lang='scss'></style>
+<style scoped lang='scss'>
+.el-header {
+  padding: 10px;
+  border-bottom: 2px solid#eeeded;
+  background-color: #fdfdfd;
+}
+</style>

@@ -18,7 +18,7 @@
     </div>
     <div class="right">
       <div class="avatar"><el-avatar
-          :size="38"
+          :size="30"
           :src="url"
         ></el-avatar></div>
       <el-dropdown @command="handleCommand">
@@ -103,6 +103,7 @@ export default {
 <style scoped lang='scss'>
 #header {
   width: 100%;
+  height: 100%;
   @include flex-center-between;
   .left,
   .right {
