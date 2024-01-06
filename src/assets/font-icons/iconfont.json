@@ -1,0 +1,37 @@
+{
+  "id": "2808817",
+  "name": "dangan",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "15634310",
+      "name": "睁眼",
+      "font_class": "zhengyan",
+      "unicode": "e6aa",
+      "unicode_decimal": 59050
+    },
+    {
+      "icon_id": "18116871",
+      "name": "闭眼",
+      "font_class": "Eyesclosed",
+      "unicode": "e6a4",
+      "unicode_decimal": 59044
+    },
+    {
+      "icon_id": "23970980",
+      "name": "password",
+      "font_class": "password1",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    },
+    {
+      "icon_id": "7684914",
+      "name": "user",
+      "font_class": "user",
+      "unicode": "e6cc",
+      "unicode_decimal": 59084
+    }
+  ]
+}

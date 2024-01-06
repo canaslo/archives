@@ -1,9 +1,9 @@
 <template>
-  <div>首页</div>
+  <div>注册</div>
 </template>
 <script>
 export default {
-  name: 'Index',
+  name: 'Register',
   data() {
     return {}
   },

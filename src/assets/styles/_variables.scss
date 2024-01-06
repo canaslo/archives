@@ -1,0 +1,70 @@
+// background-color
+$bg-color: #eeeeee;
+$bg-color-white: #FFFFFF;
+$bg-color-primary: #3947B2;
+$bg-color-primary-hover: rgb(142, 155, 252);
+
+// font-color
+$text-color: #3949aa;
+$text-color-bright-blue: rgb(0, 136, 255);
+$text-color-white: white;
+$text-color-grey: #8c939d;
+// font-size
+$text-h1: 4rem;
+$text-h2: 3.2rem;
+$text-h3: 2.4rem;
+$text-h4: 2.2rem;
+$text-h5: 1.8rem;
+$text-h6: 1.4rem;
+// 全局公共样式
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-center-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin flex-center-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-center-start {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+@mixin flex-center-end {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+@mixin flex-column-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@mixin flex-column-start {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@mixin bg-img-norepeat-position-size {
+  background: {
+    repeat: no-repeat;
+    position: 100% 100%;
+    size: 100% 100%;
+  }
+}

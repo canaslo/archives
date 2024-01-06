@@ -5,9 +5,27 @@ Vue.use(VueRouter)
 
 const routes = [
   {
+    path: '/',
+    component: () => import('@/views/index/index'),
+    children: [
+      {
+        path: '/',
+        name: 'Home',
+        component: () => import('@/views/home/index'),
+        meta: { auth: false, keepAlive: false, name: ['首页'] }
+      }
+    ]
+  },
+  {
     path: '/login',
     name: 'Login',
     component: () => import('@/views/login/index'),
+    meta: { auth: false, keepAlive: false }
+  },
+  {
+    path: '/register',
+    name: 'Register',
+    component: () => import('@/views/register/index'),
     meta: { auth: false, keepAlive: false }
   },
   {
@@ -36,6 +54,6 @@ router.beforeEach((to, from, next) => {
   }
 })
 router.afterEach((route) => {
-  console.log(`路由后置守卫: ${route}`)
+  console.log(`路由后置守卫: `, route)
 })
 export default router
