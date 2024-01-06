@@ -20,6 +20,7 @@ img {
 .el-container {
   width: 100%;
   height: 100%;
+  background-color: #eeeeee;
 }
 #app {
   width: 100%;

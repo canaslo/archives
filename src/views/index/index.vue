@@ -91,6 +91,7 @@ export default {
 .el-header {
   padding: 10px;
   border-bottom: 2px solid#eeeded;
-  background-color: #fdfdfd;
+  background-color: $bg-color-white;
+  @include flex-center-start;
 }
 </style>
