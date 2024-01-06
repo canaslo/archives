@@ -111,14 +111,14 @@ export default {
           return false
         } else {
           this.isLoading(true)
-          // this.setUserStore({
-          //   name: 'test',
-          //   token: 'custom token',
-          //   isCheck: true,
-          //   avatar: '',
-          //   username: 'test',
-          //   roles: ['admin']
-          // })
+          this.setUserStore({
+            name: 'test',
+            token: 'custom token',
+            isCheck: 1,
+            avatar: '',
+            username: 'test',
+            roles: ['admin']
+          })
           this.isLoading(false)
           this.$router.push({ path: '/' })
           // this.$post('/login', this.formData)
