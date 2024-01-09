@@ -4,7 +4,7 @@ module.exports = defineConfig({
   transpileDependencies: true
 })
 module.exports = {
-  publicPath: '/mkdir/', // 部署路径 https://a.com/mkdir/ 中的 mkdir 写到此配置
+  publicPath: '/archives/', // 部署路径 https://a.com/mkdir/ 中的 mkdir 写到此配置
   outputDir: 'dist', // 打包时生产环境生成的目录
   assetsDir: 'static', // 存放生成的静态资源目录
   filenameHashing: false, // 是否在生成的静态资源中增加hash
