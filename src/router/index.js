@@ -2,10 +2,10 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import getToken from '@/utils/token.js'
 
-// const original = VueRouter.prototype.push
-// VueRouter.prototype.push = function push(location) {
-//   return original.call(this, location).catch((e) => e)
-// }
+const original = VueRouter.prototype.push
+VueRouter.prototype.push = function push(location) {
+  return original.call(this, location).catch((e) => e)
+}
 
 Vue.use(VueRouter)
 
